@@ -1,4 +1,15 @@
+@import url('style-index.css');
 .upcoming-match{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+.match-container{
+    border: 1px solid gray;
+    width: 50%;
+}
+.match-versus{
+    display: flex;
+}
+.flag{
+    margin-right: 10px;
 }
