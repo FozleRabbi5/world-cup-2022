@@ -18,12 +18,12 @@ body{
     margin-bottom: 0;
 }
 h1{
-    font-size: 50px;
+    font-size: 3vw;
     color: white;
     margin-left: 8%;
 }
 #txt{
-    font-size: 16px;
+    font-size: 2vw;
     font-weight: 400px;
     color: white;
     margin-left: 8%;
@@ -41,7 +41,6 @@ h1{
 }
 #header-img{
     width: 70%;
-    height: 446px;
     margin: 33px 50px 0 100px;
 }
 .container{
@@ -51,8 +50,8 @@ h1{
     margin-bottom: 50px;
 }
 .manu-bar{
-    width: 45%;
-    height: 250px;
+    width: 40%;
+    height: 25%;
     border: 1px solid black;
     border-radius: 12px;
     background-color: #161616;
@@ -132,7 +131,7 @@ span{
     font-size: 18px;
 }
 footer{
-    font-size: 40px;
+    font-size: 2vw;
     text-align: center;
     padding-top: 20px;
     background-color: #161616;
@@ -160,12 +159,26 @@ hr{
     display: flex;
     justify-content: center;
     color: whitesmoke;
-  
-
 }
-/* h2{
-    font-size: 40px;
-    text-align: center;
-    
-    color: white;
-} */
+/* mobile */
+@media screen and (max-width:576px) {
+    .header-style{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width:576px) {
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width:576px) {
+    .contact-a{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* tablet */
+@media screen and (min-width:577) and (max-width:992) {
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
