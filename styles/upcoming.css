@@ -1,11 +1,57 @@
-@import url('style-index.css');
+@import url(style-index.css);
+.manu-bar{
+    width: 350px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: #161616;
+    margin-left: 10%;
+}
+ul{
+    list-style: none;
+    margin-left: 4px;
+}
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+  li a.active {
+    background-color:red;
+    color: white;
+  }
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+.manu-a{
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: -10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
 .upcoming-match{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-left: 2%;
+    grid-gap: 10px;
 }
+.next-match{
+    display: flex;
+} 
 .match-container{
-    border: 1px solid gray;
-    width: 50%;
+    padding: 20px;
+    border: 1px solid rgb(204, 200, 200);
+    width: 80%;
+    height: 150px;
+    border-radius: 12px;
 }
 .match-versus{
     display: flex;
@@ -13,3 +59,9 @@
 .flag{
     margin-right: 10px;
 }
+.match-schd{
+    display: flex;
+    margin-left: 3%;
+    margin-right: 1%;
+    margin-bottom: 50px;
+} 
